@@ -6,6 +6,12 @@
     <title>@ViewData["Title"] - Core Leave Management</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .text-white:hover{
+            color:black !important;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -30,7 +36,7 @@
                                 Manage
                             </a>
                             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item text-white" href="#">Leave Types</a>
+                                <a class="dropdown-item text-white" asp-controller="LeaveTypes" asp-action="Index">Leave Types</a>
                                 <a class="dropdown-item text-white" href="#">Leave Allocation</a>
                                 <a class="dropdown-item text-white" href="#">Leave Application</a>
                                 <a class="dropdown-item text-white" href="#">Employees</a>
